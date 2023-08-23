@@ -20,4 +20,16 @@ console.log(results);
 console.log("employer:", emp);
 console.log('sum', sum);
 let c = 2 /* Color.Blue */;
-
+// tuple-s
+let swapNumbs;
+function swapNumbers(num1, num2) {
+    return [num2, num1];
+}
+swapNumbs = swapNumbers(10, 20);
+swapNumbs[0];
+swapNumbs[1];
+// any 
+// any shouldn't be used by used
+let departament;
+departament = "It";
+departament = 10;

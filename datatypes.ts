@@ -58,5 +58,9 @@ swapNumbs[0];
 swapNumbs[1];
 
 // any 
-
+// any shouldn't be used by used
 let departament:any;
+
+departament = "It";
+departament = 10;
+
