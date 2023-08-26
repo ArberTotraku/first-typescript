@@ -6,6 +6,19 @@ class Employee {
     protected name: string;
     address: string;
 
+    // get and set methods 
+
+    // get method
+    get empID():number {
+        return this.#id;
+    }
+
+    // set method
+    // ATTENTION: properties should be inside the parathentesis
+    set empID(id:number) {
+        this.#id = id;
+    }
+
     // static method
     static getEmployeCount(): number {
         return 50;
