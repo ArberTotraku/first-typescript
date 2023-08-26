@@ -16,3 +16,10 @@ return num1 + num2 + num3.reduce( (a,b)=> a-b , 0 )
 
 let numbers = [1,2,3,4,5,6]
 console.log('add number 2:',add2(3,4,5, ...[5,6,7,8,9]));
+
+function getItems<Type>(items: Type[]):Type[] {
+    return new Array<Type>().concat(items)
+}
+
+let concatResult = getItems<number>([1,2,3,4,5])
+let concatString = getItems<string>(["a","b","c","d","e"])
