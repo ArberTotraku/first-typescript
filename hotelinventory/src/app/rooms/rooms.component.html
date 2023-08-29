@@ -6,9 +6,18 @@
     <div [innerText]="numberOfRooms"></div> 
 </div>
 
+<!-- {{rooms?.availableRooms ?? 'No rooms'}} -->
 
+<!-- use case of "NgIf"-->
+<div *ngIf="rooms.availableRooms > 0">
+
+    Rooms List: 
+    <!-- {{roomList}} -->
+
+</div>
 <!-- event binding -->
 
 <button (click)="toggle()">Toggle</button>
 
 <!-- "Control + T to search for any file" -->
+
