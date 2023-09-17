@@ -4,7 +4,7 @@ import { RoomList } from './rooms';
 @Component({
   selector: 'app-rooms',
   templateUrl: './rooms.component.html',
-  styleUrls: ['./rooms.component.sass'],
+  styleUrls: ['./rooms.component.scss'],
 })
 export class RoomsComponent {
   hotelName = 'Hilton hotel';
