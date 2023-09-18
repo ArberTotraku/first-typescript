@@ -13,4 +13,5 @@ price:number;
 photos:string;
 checkinTime:Date;
 checkoutTime:Date;
+rating:number;
 }

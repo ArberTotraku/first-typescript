@@ -21,31 +21,34 @@ export class RoomsComponent {
 
   roomList: RoomList[] = [
     {
-      roomNumber:1,
+      roomNumber: 1,
       roomType: 'Deluxe Room',
       amenities: 'Air conditioner, Free wifi,Tv,Bathroom,Kitchen',
       price: 500,
       checkinTime: new Date('11-Nov-2021'),
       checkoutTime: new Date('12-Nov-2021'),
       photos: 'https://unsplash.com/photos/3jctzdjyTas',
+      rating: 4.5,
     },
     {
-      roomNumber:2,
+      roomNumber: 2,
       roomType: 'Deluxe Room',
       amenities: 'Air conditioner, Free wifi,Tv,Bathroom,Kitchen',
       price: 1000,
       checkinTime: new Date('11-Nov-2021'),
       checkoutTime: new Date('12-Nov-2021'),
       photos: 'https://unsplash.com/photos/3jctzdjyTas',
+      rating: 3.4,
     },
     {
-      roomNumber:3,
+      roomNumber: 3,
       roomType: 'Private Room',
-      amenities:'Air conditioner, Free wifi,Tv,Bathroom,Kitchen',
-      price:15000,
+      amenities: 'Air conditioner, Free wifi,Tv,Bathroom,Kitchen',
+      price: 15000,
       checkinTime: new Date('11-Nov-2021'),
       checkoutTime: new Date('12-Nov-2021'),
-      photos:'https://unsplash.com/photos/3jctzdjyTas'
+      photos: 'https://unsplash.com/photos/3jctzdjyTas',
+      rating: 2.6,
     },
   ];
 
