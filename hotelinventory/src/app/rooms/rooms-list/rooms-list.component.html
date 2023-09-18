@@ -22,5 +22,6 @@ Rooms List:
     <td>{{ room.amenities | uppercase}}</td>
     <td>{{ room.checkinTime | date : "dd/MM/yyyy" }}</td>
 <td> {{ room.rating | number : "1.1-1" : 'en-us' }} </td>
+<td> <button class="btn btn-primary" (click)="selectRoom(room)">Select</button> </td>
   </tr>
 </table>

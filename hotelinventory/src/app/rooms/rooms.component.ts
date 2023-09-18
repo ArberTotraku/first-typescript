@@ -13,6 +13,8 @@ export class RoomsComponent {
 
   hideRooms = false;
 
+  selectedRoom!: RoomList;
+
   rooms: Room = {
     totalRooms: 20,
     availableRooms: 10,
@@ -54,5 +56,10 @@ export class RoomsComponent {
 
   toggle() {
     this.hideRooms = !this.hideRooms;
+
+  }
+
+  selectRoom(room: RoomList) {
+this.selectedRoom = room
   }
 }
