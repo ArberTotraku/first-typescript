@@ -62,4 +62,20 @@ export class RoomsComponent {
   selectRoom(room: RoomList) {
 this.selectedRoom = room
   }
+
+  addRoom() {
+    const room: RoomList = {
+      roomNumber:4,
+      roomType: 'Super room',
+      amenities: 'Air Conditioner, Free Wi-Fi, Bathroom, Kitchen',
+      price:350,
+      photos:'https://unsplash.com/photos/3jctzdjyTas',
+      checkinTime: new Date('11-December-2023'),
+      checkoutTime: new Date('11-December-2023'),
+   rating:4.8
+    }
+    // this.roomList.push(room)
+
+    this.roomList = [...this.roomList,room]
+  }
 }
