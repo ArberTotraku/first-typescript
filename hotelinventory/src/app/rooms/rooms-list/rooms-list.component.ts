@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, SimpleChange } from '@angular/core';
 import { RoomList } from '../rooms';
 
 @Component({
@@ -10,9 +10,15 @@ import { RoomList } from '../rooms';
 })
 export class RoomsListComponent {
 
+  // we can apply OnChanges when it's only input
   @Input() rooms: RoomList[] = [];
 
   @Output() selectedRoom = new EventEmitter<RoomList>();
+
+  ngOnChanges(changes:SimpleChange):void {
+    console.log(changes);
+    
+  }
 
   selectRoom(room: RoomList) {
     this.selectedRoom.emit(room)

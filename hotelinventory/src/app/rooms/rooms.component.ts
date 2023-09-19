@@ -76,6 +76,7 @@ this.selectedRoom = room
     }
     // this.roomList.push(room)
 
+    // new code with the spread operator and we add the new record
     this.roomList = [...this.roomList,room]
   }
 }
